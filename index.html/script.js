@@ -29,11 +29,11 @@ yourLocation.addEventListener('click', function(){
 })
 
 function getPosition(position) {
-    let lat = position.coords.latitude
-    let lon = position.coords.longitude
+    let lat = position.coords.latitude   //24.24211
+    let lon = position.coords.longitude  //31.55555
     let changeLat = lat.toFixed(2)
     let changeLon = lon.toFixed(2)
-    let collect = `${changeLat},${changeLon}`
+    let collect = `${changeLat},${changeLon}` // 24.24211,31.55555
     getAPI(collect)
 }
 //**knowing weather's data by using value of input search**
